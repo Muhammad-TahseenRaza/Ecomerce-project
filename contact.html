@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="02.style.css">
+    <link rel="stylesheet" href="02.media.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+
+    <!--***** Start header section -->
+
+    <header class="section-navbar">
+        <div class="top_txt">
+            <div class="container">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee</p>
+                </div>
+                <div class="sing_in_up">
+                    <a href="#">Sign In</a>
+                    <a href="#">Sing Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="public/images/log.png" alt="thapa eComerce logo" class="logo" width="80%"
+                        height="auto"></a>
+            </div>
+
+            <i id="menu-open-btn" class="fa-solid fa-bars"></i>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">products</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue"><i
+                                class="fa-solid fa-cart-shopping"> 0 </i></a></li>
+                </ul>
+
+                <i id="menu-close-btn" class="fa-solid fa-xmark"></i>
+
+            </nav>
+        </div>
+    </header>
+
+    <!--***** End header section -->
+
+
+    <!--***** Start contact section -->
+
+    <section class="section-contact">
+
+        <div class="container">
+            <h2 class="section-common--heading">Contact Us</h2>
+            <p class="section-common--subheading">Get in touch with us. We are always here to help you.</p>
+        </div>
+
+        <div class="container grid grid-two--cols">
+            <div class="contact-content">
+                <form action="#">
+                    <div class="grid grid-two--cols mb-3">
+                        <div>
+                            <label for="username">Full name</label>
+                            <input type="text" name="username" id="username" required
+                                placeholder="enter your name hamza">
+                        </div>
+                        <div>
+                            <label for="email">email address</label>
+                            <input type="email" name="email" id="email" required placeholder="hamza@gmail.com">
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="title of your message">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="message">message</label>
+                        <textarea type="text" name="message" id="message" placeholder="Mera putar ker le ga"></textarea>
+                    </div>
+
+                    <div class="mt-3">
+                        <button type="submit" class="btn contact-btn">send message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="contact-map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d27265.388961485478!2d73.4128529!3d31.3265779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1755473332098!5m2!1sen!2s" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+    <!--***** End contact section -->
+
+
+    <!--***** Start footer section -->
+
+    <footer class="section-foot">
+        <script src="footer.js"></script>
+    </footer>
+
+    <!--***** End footer section -->
+
+
+    <script src="01.mobile-menu.js"></script>
+
+    <script type="module" src="07.showAddToCartCards.js"></script>
+
+</body>
+
+</html>

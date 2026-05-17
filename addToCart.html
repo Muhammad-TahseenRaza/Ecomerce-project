@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="02.style.css">
+    <link rel="stylesheet" href="02.media.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+
+
+    <!--***** Start header section -->
+
+    <header class="section-navbar">
+        <div class="top_txt">
+            <div class="container">
+                <div class="head_txt">
+                    <p>Free shipping, 30-day return or refund guarantee</p>
+                </div>
+                <div class="sing_in_up">
+                    <a href="#">Sign In</a>
+                    <a href="#">Sing Up</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="navbar-brand">
+                <a href="index.html"><img src="public/images/log.png" alt="thapa eComerce logo" class="logo" width="80%"
+                        height="auto"></a>
+            </div>
+
+            <i id="menu-open-btn" class="fa-solid fa-bars"></i>
+
+            <nav class="navbar">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link">about</a></li>
+                    <li class="nav-item"><a href="products.html" class="nav-link">products</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">contact</a></li>
+                    <li class="nav-item"><a href="addToCart.html" class="nav-link add-to-cart-button" id="cartValue"><i
+                                class="fa-solid fa-cart-shopping"> 0 </i></a></li>
+                </ul>
+
+                <i id="menu-close-btn" class="fa-solid fa-xmark"></i>
+
+            </nav>
+        </div>
+    </header>
+
+    <!--***** End header section -->
+
+
+    <!--***** Start product section -->
+
+    <section class="addToCartElement">
+        <div class="container">
+            <section>
+                <div id="productCartContainer"></div>
+            </section>
+
+            <section class="productCartTotalElem">
+                <div class="productCartTotalElement">
+                    <p>Selected Offer Summary</p>
+                    <div class="productOrderTotal">
+                        <div>
+                            <p>Sub total:</p>
+                            <p class="productSubTotal">pkr0</p>
+                        </div>
+                        <div>
+                            <p>Tax:</p>
+                            <p class="productSubTotal">Rs 50</p>
+                        </div>
+                        <hr>
+                        <div>
+                            <p>Final total:</p>
+                            <p class="productFinalTotal">pkr0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+    <!--***** End product section -->
+
+
+    <!--***** Start product template section -->
+
+    <template id="productCartTemplate">
+
+        <div class="cards" id="cardValue">
+            <div>
+                <span class="category"></span>
+            </div>
+            <div class="imageContainer">
+                <img class="productImage" src="" alt="">
+            </div>
+
+            <h2 class="productName"></h2>
+            <p class="productPrice"></p>
+
+            <div class="stockElement">
+                <button class="cartIncrement">+</button>
+                <p class="productQuantity" data-quantity="1">1</p>
+                <button class="cartDecrement">-</button>
+            </div>
+
+            <button class="add-to-cart-button remove-to-cart-button">Remove</button>
+        </div>
+
+    </template>
+
+    <!--***** End product template section -->
+
+
+    <!--***** Start footer section -->
+
+    <footer class="section-footer">
+        <div class="footer-container container grid grid-four--cols">
+            <div class="content_1">
+                <img src="public/images/logo.png" alt="logo">
+                <p>Welcome to hamza ecomstore, your ultimate destination for cutting-edge gadgets!</p>
+            </div>
+            <div class="content_2">
+                <h4>Shopping</h4>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+            </div>
+            <div class="content_3">
+                <h4>Experince</h4>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+                <a href="#">Computer Store</a>
+            </div>
+            <div class="content_4">
+                <h4>Newspaper</h4>
+                <p>Be the first to know about new email</p>
+                <div class="f-email">
+                    <input type="email" placeholder="your email">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--***** End footer section -->
+
+
+    <script src="01.mobile-menu.js"></script>
+    <script type="module" src="07.showAddToCartCards.js"></script>
+
+</body>
+
+</html>
